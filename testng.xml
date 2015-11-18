@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Selenium Tests" verbose="3" parallel="tests">
+	<parameter name="appURL" value="http://newtours.demoaut.com/mercuryregister.php"></parameter> 
+
+	<test name="Test in FF">
+		<parameter name="browser" value="FF"></parameter>
+		<classes>
+			<class name="com.seleniumtests.test.WebDriverTest" />
+		</classes>
+	</test>
+</suite>
